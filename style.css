@@ -25,7 +25,7 @@ body{
 .right{
     
              /* Prevent the image from growing or shrinking */
-            width: 450px; /* Adjust size as needed */
+            width: 520px; /* Adjust size as needed */
             height: auto; /* Maintain aspect ratio */
             
             transform: translate3d(760px,-390px,650px);
