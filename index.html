@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9cdb7e0228.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="box"></div>
+    <div class="container">
+        <nav>
+            <img src="logo3.png" height="10%" width="15%" style="margin-top: 20px;"class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>  
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#contact">Contact</a></li></ul>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+         <!--#C47CF9-->
+        <div class="text">
+            <p> Computer Science Engineer</p>
+            <h1>Hi, I'm <span>Ishita Garg<br> </span>From TIET</h1>
+        </div>
+        <div>
+            <img src="bg3.png" class="right"> <!--height:800px width: 100% align:bottom-right-->
+        </div>
+         
+    </div>
+</div><br><br><br><br><br>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="pic10.jpg" >
+            </div>
+            <div class="about-col-2">
+               <h1 class="subtitle">About Me</h1>
+               <p>An enthusiastic and passionate Computer Science Engineer with a keen interest in technology and a flair
+                for Graphic Design. I aim to leverage my expertise and creative abilities to drive innovation and achieve
+                strategic objectives within dynamic teams.</p>
+                <div class="tab">
+                    <p class="tl active-link" onclick="opentab('education')">Education</p>
+                    <p class="tl" onclick="opentab('certifications')">Certifications</p>
+                    
+                </div>
+                
+                <div class="c active-tab" id="education">
+                    <ul class="bullet">
+                       <li><span>2022-2026</span><br>Computer Engineering at TIET<br>CGPA : 8.89</li><br> 
+                       <li><span>2020-2022</span><br>Delhi Public School<br>% : 97.7</li><br> 
+                       <li><span>2020</span><br>St. Anthony's Secondary School<br>% : 97.6</li><br> 
+                    </ul>
+                </div>
+                <div class="c" id="certifications">
+                    <ul class="bullet">
+                       <li><span>Owasp</span><br>HackOwasp</li><br>
+                       <li><span>Cisco</span><br>Python Essentials 1 & 2</li><br> 
+                       <li><span>Amazon</span><br>Amazon HackOn</li><br>
+                       <li><span>Flipkart</span><br>Flipkart Runaway S4</li><br>
+                       <li><span>Microsoft</span><br>Building Blocks of Azure and AI</li><br>
+                       <li><span>TIET</span><br>ELC-Mobile Development and DIY With Arduino</li><br> 
+                       <!--<li><span>TIET</span><br>ELC-DIY With Arduino</li> <br>-->
+                    </ul>
+              </div>
+                
+            </div>
+        </div>
+    </div> 
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle adjust">Skills</h1>
+        <div class="list">
+         <div>
+            <i class="fa-solid fa-laptop"></i>
+            <h2>Machine Learning</h2>
+         </div> 
+         <div>
+            <i class="fa-brands fa-python"></i>
+            <h2>Python</h2>
+         </div>
+         <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>DSA</h2>
+         </div>
+         <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>C/C++</h2>
+         </div> 
+         <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>PL/SQL</h2>
+         </div> 
+         <div>
+            <i class="fa-brands fa-html5"></i>
+            <h2>Frontend Development</h2>
+         </div>  
+         <div>
+            <i class="fa-solid fa-m"></i>
+            <h2>MATLAB</h2>
+         </div>
+         <div>
+            <i class="fa-brands fa-figma"></i>
+            <h2>Figma</h2>
+         </div> 
+         <div>
+            <i class="fa-solid fa-palette"></i>
+            <h2>Illustrator</h2>
+         </div> 
+         <div>
+            <i class="fa-regular fa-image"></i>
+            <h2>Photoshop</h2>
+         </div>                      
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="left">
+                <h1 class="subtitle adjust">Contact Me</h1><br>
+                <p><i class="fa-regular fa-envelope"></i>igarg_be22@thapar.edu</p>
+                <p><i class="fa-solid fa-phone"></i>7827613787</p><br>
+                <div class="icon">
+                <a href="https://www.linkedin.com/in/ishita-garg-43543b262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Ishita-3992"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/its_ishitagarg?igsh=MXd4eTVid2J1d3ltYQ=="><i class="fa-brands fa-instagram"></i></a>
+                </div><br><br>
+                <a href="resumeeee.pdf" class="btn">Download Resume</a>
+            </div>
+            <div class="right1">
+              <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+             <textarea name="message" row="5" placeholder="Message"></textarea>
+             <button type="submit" class="btn btn2">Submit</button>
+             <span id="msg"></span> 
+              </form> 
+             
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        <p>Copyright @ Ishita Garg</p>
+    </div>
+</div>
+<script>
+    var tab=document.getElementsByClassName("tl");
+    var content=document.getElementsByClassName("c");
+    function opentab(tabname)
+    {
+        for(i of tab)
+        {
+            i.classList.remove("active-link");
+        }
+        for(j of content)
+        {
+            j.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+var sidemenu= document.getElementById("sidemenu");
+function openmenu()
+{
+    sidemenu.style.right="0";
+}
+function closemenu()
+{
+    sidemenu.style.right="-200px";
+}
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby4Miy24H_YgA-iYLnv1hZE-SSW2o5T-gK8LEGgphaE5RU3OH2SFcWftQra1HdBtBoq/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= " Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML= ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
